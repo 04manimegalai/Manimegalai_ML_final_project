@@ -1,0 +1,63 @@
+"Crop Recommendation System Using Machine Learning Classifiers"
+This project is focused on recommending the best crop to grow based on various environmental factors using machine learning.
+
+Data Loading and Preprocessing:
+
+The dataset Crop_recommendation.csv is loaded and explored using pandas.
+
+Missing values are checked, and the distribution of the target variable (crop type) is examined.
+
+A dictionary (crop_dict) is used to map crop names to numeric labels, which are then added to the dataset.
+
+Feature and Target Separation:
+
+The features (N, P, K, temperature, humidity, ph, and rainfall) are separated from the target variable (crop_num), which is the numeric label of the crop.
+
+Data Splitting and Scaling:
+
+The data is split into training and testing sets (80% training, 20% testing).
+
+The features are scaled using MinMaxScaler to normalize the values.
+
+Model Training:
+
+Several classification models are trained, including:
+
+Logistic Regression
+
+Naive Bayes
+
+Support Vector Machine (SVM)
+
+K-Nearest Neighbors (KNN)
+
+Decision Tree
+
+Random Forest
+
+Bagging Classifier
+
+AdaBoost
+
+Gradient Boosting
+
+Extra Trees
+
+The accuracy of each model is evaluated, and confusion matrices are displayed.
+
+Model Selection:
+
+The model with the highest accuracy is selected as the best model for crop recommendation.
+
+Crop Recommendation Function:
+
+A function (recommendation) is created to predict the best crop based on new input values (such as nitrogen, phosphorus, temperature, etc.).
+
+The function uses the best model to predict the crop and decode the result back into the crop name using the inverse of crop_dict.
+
+Example Prediction:
+
+A set of new environmental conditions is used to predict the best crop to cultivate.
+The result is output, showing the predicted crop.
+
+This project showcases how machine learning models can be applied to predict the optimal crop to grow based on environmental conditions

@@ -1,0 +1,78 @@
+"Heart Disease Prediction Using Machine Learning Models"
+
+Dataset contains 1,025 rows and 14 columns.
+
+Columns:
+age - Age of the patient
+
+sex - Gender (1 = male, 0 = female)
+
+cp - Chest pain type (categorical)
+
+trestbps - Resting blood pressure (in mm Hg)
+
+chol - Serum cholesterol (in mg/dl)
+
+fbs - Fasting blood sugar (> 120 mg/dl, 1 = true, 0 = false)
+
+restecg - Resting electrocardiographic results (categorical)
+
+thalach - Maximum heart rate achieved
+
+exang - Exercise-induced angina (1 = yes, 0 = no)
+
+oldpeak - ST depression induced by exercise relative to rest
+
+slope - Slope of the peak exercise ST segment
+
+ca - Number of major vessels (0-3) colored by fluoroscopy
+
+thal - Thalassemia type (categorical)
+
+target - Presence of heart disease (1 = Yes, 0 = No)
+
+Heart Disease Prediction Using Machine Learning
+
+The goal of this project was to develop a machine learning model that predicts the presence of heart disease based on patient data.
+
+Steps Taken:
+Data Analysis & Preprocessing
+
+Loaded the dataset and examined its structure.
+
+Checked for missing values (none were found).
+
+Analyzed feature correlations using a heatmap.
+
+Standardized numerical features for better model performance.
+
+Model Training & Hyperparameter Tuning
+
+Used Random Forest, Gradient Boosting, and Support Vector Machine (SVM) classifiers.
+
+Performed hyperparameter tuning with GridSearchCV to optimize model performance.
+
+Split the dataset into 80% training and 20% testing.
+
+Model Evaluation & Selection
+
+Compared models based on accuracy, confusion matrix, classification report, and AUC-ROC curve.
+
+Identified the best-performing model based on test accuracy and AUC score.
+
+The selected model was used for predictions.
+
+Prediction System
+
+Implemented a function to predict heart disease risk for new patient data.
+
+Example patient cases were tested, providing results as "At Risk" or "Not at Risk".
+
+Outcome:
+The best model achieved high accuracy in predicting heart disease.
+
+The AUC-ROC curve indicated strong classification ability.
+
+A predictive system was built, which can be used for early risk assessment in patients.
+
+This project successfully demonstrated how machine learning can assist in heart disease detection, potentially aiding in early diagnosis and medical intervention

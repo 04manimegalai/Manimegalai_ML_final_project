@@ -1,0 +1,46 @@
+"Customer Segmentation Using K-Means Clustering"
+
+Dataset Summary:
+Rows: 30,000
+
+Columns: 40
+
+Key Features:
+
+gradyear: Graduation year (integer)
+
+gender: Gender of the individual (M/F or NaN for missing values)
+
+age: Age of the individual (float)
+
+friends: Number of friends (integer)
+
+Various binary features (0 or 1) representing interests, activities, and behaviors (e.g., basketball, football, music, shopping, drunk, drugs)
+
+This project applies K-Means clustering to segment individuals based on their interests and demographic characteristics. The key outcomes are:
+
+Data Cleaning & Preprocessing
+
+Handled missing values in the gender and age columns.
+
+Scaled numerical features for better clustering performance.
+
+Encoded categorical variables (e.g., gender) into numerical values.
+
+Optimal Cluster Selection
+
+Used the Elbow Method with KneeLocator to determine the optimal number of clusters.
+
+Identified the best K value for meaningful segmentation.
+
+Cluster Formation & Analysis
+
+Applied K-Means clustering to group individuals with similar interests and demographics.
+
+Visualized cluster distributions and analyzed key differences between groups.
+
+
+
+Conclusion
+The project successfully grouped individuals into meaningful clusters based on their age, gender, and interests.
+These insights can be used for targeted marketing, social network analysis, or personalized recommendations.
