@@ -1,0 +1,70 @@
+"Credit Card Fraud Detection Using Machine Learning Models"
+The outcome of this project is an analysis of fraud detection in credit card transactions using different machine learning models, specifically Naïve Bayes and Logistic Regression, with various preprocessing techniques.
+
+
+1. Data Exploration & Preprocessing
+The dataset is highly imbalanced (only 0.17% fraud cases).
+
+Features are scaled (Amount feature) and irrelevant features are dropped (Time, some V features).
+
+Undersampling was performed to balance the dataset.
+
+2. Model Performance Evaluation
+The project tested multiple cases with different feature selections and data balancing techniques. The key performance metrics observed include:
+
+Naïve Bayes (NB) Results
+Without dropping features:
+
+Recall: 84.7%
+
+Precision: 5.9% (High false positives)
+
+F1-score: 10.9%
+
+Accuracy: 97.6%
+
+ROC AUC: 96.3%
+
+After feature selection (dropping some V features):
+
+Recall improved to 87.7%
+
+Precision increased slightly
+
+Accuracy improved to 98.3%
+
+Logistic Regression (LR) Results
+On imbalanced full dataset:
+
+Recall: 60.2%
+
+Precision: 81.9%
+
+F1-score: 69.4%
+
+Accuracy: 99.9%
+
+ROC AUC: 97.4%
+
+On undersampled balanced dataset:
+
+Recall: 92.8%
+
+Precision: 98.9%
+
+F1-score: 95.7%
+
+Accuracy: 99%
+
+3. Key Insights
+Naïve Bayes performed well in recall but had low precision, meaning it detected fraud well but had many false alarms.
+
+Logistic Regression was more stable, especially with undersampled data, achieving a good balance between precision and recall.
+
+Undersampling improved recall significantly but may not generalize well to real-world fraud detection.
+
+4. Conclusion
+Logistic Regression with undersampling provided the best trade-off between recall and precision.
+
+Naïve Bayes is useful for high recall cases but requires further tuning.
+
