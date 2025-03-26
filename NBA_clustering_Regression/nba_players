@@ -1,0 +1,149 @@
+Player Information:
+Player.x: Player's name
+Player_ID: Unique identifier for the player
+Pos1, Pos2: Primary and secondary playing positions
+Age: Player's age
+Tm: Team abbreviation
+Conference: Conference the player belongs to (East/West)
+
+Performance Stats:
+G: Games played
+GS: Games started
+MP: Minutes played
+PTS: Points scored
+AST: Assists
+STL: Steals
+BLK: Blocks
+TOV: Turnovers
+TRB: Total rebounds
+FG, FGA, FG.: Field goals made, attempted, and percentage
+X3P, X3PA, X3P.: Three-point shots made, attempted, and percentage
+FT, FTA, FT.: Free throws made, attempted, and percentage
+
+Additional Info:
+Salary: Player’s salary (stored as a string, might need conversion)
+mean_views: Likely represents player popularity/views
+Season: The season of the data
+Role: Player's role (Frontcourt/Backcourt)
+Score: Some ranking score
+Play: Indicates if the player played in the season (Yes or No)
+
+1. Project Objective
+The goal of this project was to:
+
+Analyze NBA player statistics (e.g., points, assists, rebounds)
+
+Cluster players based on their performance, salary, and popularity
+
+Predict future salaries using machine learning models
+
+Provide insights for decision-making (e.g., player recruitment, salary negotiations)
+
+2. Key Steps & Techniques Used
+Data Preprocessing & Cleaning
+Loaded and cleaned the NBA-PLAYERS.csv dataset.
+
+Handled missing values using:
+
+Median/Mode imputation for numerical and categorical features.
+
+Standardized numerical features using StandardScaler for consistent clustering and modeling.
+
+Applied Label Encoding and One-Hot Encoding to convert categorical variables.
+
+Clustering: PCA + K-Means
+Applied Principal Component Analysis (PCA) to reduce dimensionality while preserving key information.
+
+Determined the optimal number of clusters using:
+Elbow Method
+Silhouette Score → Optimal cluster count: 2
+
+Cluster Profiling:
+
+Cluster 0:
+
+Low scorers, fewer assists, lower salaries.
+
+Cluster 1:
+
+High scorers, more assists, higher salaries.
+
+Cluster Visualization:
+
+Bar plots comparing player statistics, salaries, and performance metrics across clusters.
+
+
+Supervised Learning: Salary Prediction with Regression
+Model Selection:
+
+Used Random Forest Regressor to predict NBA player salaries.
+
+Model Tuning:
+
+Applied RandomizedSearchCV for efficient hyperparameter tuning.
+
+Model Evaluation:
+
+Mean Squared Error (MSE): 21641360840768.08
+
+R² Score: 0.5988 → Indicates the model explains ~59.88 of salary variance.
+
+Feature Importance:
+
+Key influencing features:
+
+PTS (Points per game)
+
+AST (Assists)
+
+TRB (Total rebounds)
+
+
+Visualization & Interpretation
+Feature Importance:
+
+Highlighted the most influential stats driving player salaries.
+
+Predicted vs. Actual Salaries (Line Plot):
+
+Showed how accurately the model fits the salary data.
+
+Deviations between the predicted and actual lines indicated model errors.
+
+
+
+Top salary-driving features:
+
+Points (PTS) and assists (AST) were the strongest predictors of higher salaries.
+
+Popularity metrics (mean views) also played a role.
+
+
+
+
+
+3.Potential Business Applications
+Player Recruitment & Contracts:
+
+Identify undervalued players with strong performance metrics.
+
+Use cluster-based insights to negotiate better salary contracts.
+
+Performance Analysis:
+
+Track player improvements and compare them across seasons.
+
+Salary Forecasting:
+
+Predict potential future salaries based on current performance.
+
+
+4.Conclusion:
+This project successfully applied clustering and regression models to:
+
+Segment NBA players based on performance.
+
+Predict salaries with a reasonably accurate model.
+
+Provide actionable insights for recruitment, salary negotiation, and performance evaluation.
+

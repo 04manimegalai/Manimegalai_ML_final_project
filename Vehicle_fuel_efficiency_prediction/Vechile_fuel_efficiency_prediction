@@ -1,0 +1,37 @@
+Vehicle Fuel Efficiency Analysis & Prediction
+Objective:
+This project aims to analyze and predict vehicle fuel efficiency (MPG - miles per gallon) using clustering techniques and machine learning models.
+
+Methodology:
+Data Preprocessing & Exploration:
+
+Loaded and cleaned the dataset (cluster_mpg.csv).
+
+Handled missing values and performed feature scaling.
+
+Clustering Analysis (Unsupervised Learning):
+
+Used Agglomerative Hierarchical Clustering to group vehicles based on features.
+
+Visualized relationships with dendrograms, clustermaps, and heatmaps.
+
+MPG Prediction (Supervised Learning):
+
+Trained a Random Forest Regressor to predict MPG based on vehicle attributes.
+
+Evaluated model performance using MSE & R² Score.
+
+Prediction for New Vehicles:
+
+Provided a framework to predict MPG for a new vehicle based on given specifications.
+
+Outcomes:
+Identified vehicle clusters with similar fuel efficiency patterns.
+Developed a highly accurate model to predict MPG.
+Provided a data-driven approach for vehicle performance analysis.
+
+
+Conclusion
+Hierarchical clustering effectively grouped vehicles based on key attributes.
+Random Forest model accurately predicted MPG, making it a reliable tool for fuel efficiency estimation.
+Feature scaling and data preprocessing significantly improved model performance.

@@ -1,0 +1,53 @@
+Rainfall Prediction Project
+This project aims to predict whether it will rain or not based on meteorological features like pressure, humidity, temperature, cloud cover, and wind conditions using Random Forest Classification.
+
+Key Outcomes:
+Data Cleaning & Preprocessing:
+
+Handled missing values using mode and median imputation.
+
+Converted categorical rainfall labels ('yes' → 1, 'no' → 0).
+
+Removed highly correlated features to reduce redundancy.
+
+Resampled data to balance class distribution (downsampling).
+
+Exploratory Data Analysis (EDA):
+
+Visualized distributions of numerical features.
+
+Identified correlations between meteorological factors.
+
+Explored class imbalance and feature importance.
+
+Model Training & Hyperparameter Tuning:
+
+Used Random Forest Classifier with GridSearchCV for hyperparameter tuning.
+
+Selected the best model with optimized parameters.
+
+Achieved high cross-validation accuracy.
+
+Model Evaluation:
+
+Accuracy: Assessed performance on test data.
+
+Confusion Matrix & Classification Report: Measured precision, recall, and F1-score.
+
+Cross-Validation Scores: Verified model reliability across different data splits.
+
+Prediction on New Data:
+
+Tested the trained model with real-world input values.
+
+Provided a binary classification output: "Rainfall" or "No Rainfall".
+
+Model Deployment:
+
+Saved the trained model using pickle for future use.
+
+Can be used for real-time rainfall prediction in weather forecasting applications.
+
+Final Outcome:
+A trained and optimized Random Forest model that can accurately predict rainfall based on historical weather data.
+This model can be further integrated into weather forecasting systems, agricultural planning, and disaster management applications

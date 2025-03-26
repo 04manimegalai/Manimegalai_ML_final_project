@@ -1,0 +1,32 @@
+Movie & TV Show Clustering and Recommendation System
+1. Data Preprocessing and Cleaning
+Merged datasets from Netflix, Amazon Prime, and HBO to create a unified dataset.
+
+Cleaned categorical variables (genres, production countries) and handled missing values.
+
+One-hot encoded categorical variables for better machine learning performance.
+
+2. Clustering with DBSCAN
+Used DBSCAN (Density-Based Spatial Clustering of Applications with Noise) to group movies and TV shows based on their features.
+
+Found the best hyperparameters (eps and min_samples) using Silhouette Score Optimization.
+
+Assigned a cluster label to each movie/TV show based on its characteristics.
+
+3. Movie Recommendation System
+Implemented a content-based recommendation system using clustering.
+
+When a user inputs a movie name, the system:
+
+Finds the cluster it belongs to.
+
+Suggests similar movies from the same cluster.
+
+If there are more than 5 similar movies, it randomly selects 5 recommendations.
+
+4. Final Results
+Users can input a movie name, and the system recommends similar movies based on clustering.
+
+Helps users discover content across different platforms (Netflix, Amazon Prime, HBO).
+
+DBSCAN ensures that highly similar movies are grouped together while filtering out noise.
