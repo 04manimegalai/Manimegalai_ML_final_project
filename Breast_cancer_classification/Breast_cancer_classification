@@ -1,0 +1,77 @@
+"Breast Cancer Prediction Using Machine Learning: A Comparative Analysis of Models"
+
+1. Data Preprocessing & Exploration
+Dataset: Loaded from breast_cancer.csv.
+
+Initial Analysis: Displayed dataset shape, column information, and basic statistics.
+
+Feature Engineering:
+
+Dropped unnecessary columns (S/N, Year).
+
+Identified categorical and numerical features.
+
+Encoded categorical variables using Label Encoding.
+
+Converted Tumor Size (cm) and Inv-Nodes to numeric values.
+
+Handled missing values by filling with the median.
+
+Exploratory Data Analysis (EDA):
+
+Analyzed categorical and numerical feature distributions.
+
+Examined correlation between features using a heatmap.
+
+Visualized target variable (Diagnosis Result) distribution.
+
+2. Machine Learning Models
+The project employs four classification models:
+
+Logistic Regression
+
+Random Forest
+
+Support Vector Classifier (SVC)
+
+Gaussian Naive Bayes
+
+Feature Scaling: Standardized numerical features using StandardScaler.
+
+Train-Test Split: 80% training, 20% testing.
+
+Model Training & Evaluation
+Each model was trained and evaluated using:
+
+Accuracy Score
+
+Classification Report (Precision, Recall, F1-score)
+
+Confusion Matrix
+
+Precision-Recall Curve
+
+ROC Curve and AUC Score
+
+Performance Visualization
+Confusion Matrices: Displayed for training and testing sets.
+
+Precision-Recall Curves: Showed trade-offs between precision and recall.
+
+ROC Curves: Evaluated model performance in distinguishing between classes.
+
+3. Model Performance Summary
+Each model's performance was analyzed in terms of classification accuracy and visualization:
+
+Logistic Regression: Good baseline performance.
+
+Random Forest: Higher accuracy due to ensemble learning.
+
+Support Vector Classifier (SVC): Performed well with non-linear classification.
+
+Gaussian Naive Bayes: Faster but may struggle with correlated features.
+
+Conclusion
+The project successfully implemented multiple ML models for breast cancer classification.
+
+Random Forest and SVC showed better predictive accuracy.

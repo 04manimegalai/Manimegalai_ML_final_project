@@ -1,0 +1,73 @@
+Autism Spectrum Disorder (ASD) Prediction Using Machine Learning
+
+Shape: 800 rows × 22 columns
+
+Columns:
+
+ID: Unique identifier
+
+A1_Score – A10_Score: Responses to 10 autism screening questions (binary: 0 or 1)
+
+Age: Age of the individual
+
+Gender, Ethnicity, Jaundice, Autism (family history), Country of Residence, Used App Before, Relation: Categorical variables
+
+Result: Numerical score from the autism screening test
+
+Age Description: Age group category
+
+Class/ASD: Target variable (0 = No ASD, 1 = ASD)
+
+Missing Values: No missing values in any column.
+
+Data Types:
+
+Numerical: Age, A1-A10 Scores, Result
+
+Categorical: Gender, Ethnicity, Jaundice, Autism, Country, Used App, Relation
+
+Target Variable: Class/ASD (binary classification)
+
+Objective:
+The goal of this project is to develop a machine learning model to predict whether an individual has Autism Spectrum Disorder (ASD) based on various demographic and behavioral features.
+
+Dataset:
+The dataset includes features such as age, gender, ethnicity, jaundice history, country of residence, test scores, and responses to ASD screening questions.
+
+Approach:
+Data Preprocessing:
+
+Handled missing values and inconsistent categorical entries.
+
+Encoded categorical variables using Label Encoding.
+
+Identified and replaced outliers using the IQR method.
+
+Applied SMOTE to address class imbalance in the dataset.
+
+Feature Engineering:
+
+Dropped redundant columns (e.g., ID, age_desc).
+
+Standardized categorical features.
+
+Model Training & Evaluation:
+
+Implemented Decision Tree, Random Forest, and XGBoost classifiers.
+
+Used cross-validation to compare model performance.
+
+Performed hyperparameter tuning using RandomizedSearchCV.
+
+Selected the best-performing model based on accuracy.
+
+Deployment & Prediction:
+
+Saved the trained model and label encoders using Pickle.
+
+Created a function to preprocess and predict ASD using new input data.
+
+Results:
+The best model was selected based on cross-validation accuracy.
+
+The model was tested on unseen data, achieving high accuracy in ASD classification.
